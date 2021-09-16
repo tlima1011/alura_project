@@ -60,7 +60,8 @@ public class Empresa {
 		for(int i = 0; i < funcionarios.length; i++) {
 			Funcionario funcs = funcionarios[i];
 			if(funcs == null) continue;
-			System.out.print("Codigo Funcionario: "+i+"\nNome: " + funcs.getNome()
+			funcs.setId(i); 
+			System.out.print("Codigo Funcionario #"+funcs.getId()+"\nNome: " + funcs.getNome()
 					+"\nDepartamento: " + funcs.getDepartamento()
 					+"\nRG: " + funcs.getRg()
 					+"\nData: " +formataData.format(funcs.getDataEntrada()) 

@@ -5,6 +5,8 @@ import java.util.Date;
 
 public class Funcionario {
 	
+	private static int ultimoCodigo = 0; 
+	private int id; 
 	private String nome = ""; 
 	private String departamento = ""; 
 	private Double salario = 0.0; 
@@ -12,9 +14,17 @@ public class Funcionario {
 	private String rg = "";
 	
 	public Funcionario() {
-		
+
 	}
 	
+	public void setId(int i) {
+		this.id = i;
+	}
+	
+	public int getId() {
+		return id;
+	}
+		
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
